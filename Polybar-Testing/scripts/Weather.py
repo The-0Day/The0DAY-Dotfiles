@@ -2,16 +2,14 @@
 import requests
 
 
-CITY = "5308655"
-API_KEY = "1772961a1406307e819497a0a4a8f5d0"
+CITY = ""
+API_KEY = ""
 UNITS = "Metric"
 UNIT_KEY = "C"
 
 
 
-#REQ = requests.get("http://api.openweathermap.org/data/2.5/weather?id={}&appid={}&units={}".format(CITY, API_KEY))
 
-# url = ('http://api.openweathermap.org/data/2.5/weather?q={}&units={}&appid={}').format(city, units, api_key)
 
 
 REQ = requests.get("http://api.openweathermap.org/data/2.5/weather?id={}&appid={}&units={}".format(CITY, API_KEY, UNITS))
