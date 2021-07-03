@@ -1,0 +1,69 @@
+/* Color-Scheme */
+
+* {
+    FOREGROUND:  #ABB2BF;
+    BACKGROUND:  #282C34;
+    BLACK:       #5C6370;
+    RED:         #E06C57;
+    GREEN:       #98C379;
+    YELLOW:      #E5C07B;
+    BLUE:        #61AFEF;
+    MAGENTA:     #C678DD;
+    CYAN:        #56B6CB;
+    WHITE:       #ABB2BF;
+    ALTBLACK:    #4B5263;
+    ALTRED:      #BE5046;
+    ALTGREEN:    #98C379;
+    ALTYELLOW:   #D19A66;
+    ALTBLUE:     #61AFEF;
+    ALTMAGENTA:  #C678DD;
+    ALTCYAN:     #56B6C2;
+    ALTWHITE:    #3E4452;
+
+    2BACKGROUND:  #B32F383E;
+    2FOREGROUND:  #D3C6AA;
+    SEP:          #394248;
+    BG:           #212B30;
+    BG1:          #263035;
+    BG2:          #2B353A;
+    BG3:          #303A3F;
+    BG4:          #353F44;
+    BG5:          #3A4449;
+    BG6:          #3F494E;
+    BGA:          #5C6F7B;
+    FG:           #C4C7C5;
+    AC:           #4DD0E1;
+
+    TEAL:         #00B19F;
+    PINK:         #EC407A;
+    AMBER:        #FBC02D;
+    ORANGE:       #E57C46;
+
+    SBLUE:       #42A5F5;
+    SRED:        #EC7875;
+    SGREEN:      #61C766;
+    SCYAN:       #4DD0E1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+configuration {
+	font:							"Iosevka Nerd Font 10";
+    show-icons:                     true;
+    icon-theme:                     "PineCone";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					true;
+}
+
+
+@import "colors.rasi"
+
+
+window {
+    transparency:                   "real";
+    background-color:               @BACKGROUND;
+    text-color:                     @FOREGROUND;
+	border:							0px;
+	border-color:					@BLACK;
+    border-radius:                  0px;
+	width:							100%;
+    location:                       south;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0.25% 0.75% 0% -0.25%;
+	background-color: 				@BACKGROUND;
+	text-color: 					@RED;
+	font:							"Iosevka Nerd Font 12";
+}
+
+entry {
+    background-color:               @BACKGROUND;
+    text-color:                     @FOREGROUND;
+    placeholder-color:              @CYAN;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search...";
+    padding:                        -0.10% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @BACKGROUND;
+    text-color:                     @FOREGROUND;
+    expand:                         false;
+	border:							0% 0% 0.3% 0%;
+    border-radius:                  100%;
+	border-color:					@CYAN;
+    margin:                         0% 73.75% 0% 0%;
+    padding:                        1.25%;
+    spacing:                        0px;
+}
+
+listview {
+    background-color:               @BACKGROUND;
+    columns:                        12;
+    lines:	                        1;
+    spacing:                        0%;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @BACKGROUND;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@BACKGROUND;
+    children:                       [ inputbar, listview ];
+    spacing:                       	1.5%;
+    padding:                        2% 1% 2% 1%;
+}
+
+element {
+    background-color:               @BACKGROUND;
+    text-color:                     @FOREGROUND;
+    orientation:                    vertical;
+    border-radius:                  0%;
+    padding:                        2.5% 0% 2.5% 0%;
+}
+
+element-icon {
+    size:                           80px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+    background-color:               @SEP;
+    text-color:                     @GREEN;
+	border:							0% 0% 0.3% 0%;
+    border-radius:                  25px;
+    border-color:                  	@PINK;
+}

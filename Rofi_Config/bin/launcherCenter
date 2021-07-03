@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+### CENTER  ###
+
+
+DIR="$HOME/BSPWM-Project"
+
+rofi -padding 1 -sidebar-mode -threads 4 -marching regex -no-lazy-grab -show drun -theme ~/BSPWM-Project/Rofi_Config/launcherCENTER.rasi
+

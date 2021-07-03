@@ -1,0 +1,84 @@
+configuration {
+    disable-history:                false;
+    fullscreen:                     false;
+    hide-scrollbar: 		        true;
+    sidebar-mode: 		            false;
+}
+
+@import "~/test/colors.rasi"
+
+* {
+    background-color:               @BACKGROUND;
+    text-color:                     @FOREGROUND;
+}
+
+window {
+    transparency:                   "real";
+    background-color:               @BACKGROUND;
+    text-color:                     @FOREGROUND;
+    border-radius:                  12px;
+    width:                          80px;
+    location:                       east;
+    x-offset:                       -15px;
+    y-offset:                       0px;
+}
+
+listview {
+    lines:							6;
+    margin:                         5px;
+    spacing:                        5px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @BACKGROUND;
+    children:                       [ listview ];
+}
+
+element {
+    background-color:               @BLUE;
+    text-color:                     @BLACK;
+    orientation:                    vertical;
+    border-radius:                  12px;
+}
+
+element-text {
+    font:			    "feather 20";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0;
+    margin:                         5px 5px 30px 5px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @PINK;
+    text-color:                     @BACKGROUND;
+    border-radius:                  10px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @BACKGROUND;
+    text-color:                     @BACKGROUND;
+}
+
+element selected {
+    background-color:               @SEP;
+    text-color:                     @MAGENTA;
+    border:                  	    0px;
+    border-radius:                  10px;
+    border-color:                   @BACKGROUND;
+}
+
+element selected.urgent {
+    background-color:               @SEP;
+    text-color:                     @MAGENTA;
+}
+
+element selected.active {
+    background-color:               @BACKGROUND;
+    color:                          @BACKGROUND;
+}

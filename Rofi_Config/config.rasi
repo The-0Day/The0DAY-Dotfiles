@@ -1,0 +1,8 @@
+configuration {
+  show-icons:         true;
+  icon-theme:         "PineCone";
+  terminal:           "st";
+  cycle:              false;
+  hide-scrollbar:     true;
+  disable-history:    false;
+}
